@@ -18,7 +18,7 @@ class StatamicContentLinkCommand extends Command
         $relative = $this->option('relative');
 
         foreach (config('statamic.content-link.paths') as $path) {
-            if (is_dir($path) && !is_link($path)) {
+            if (is_dir($path) && ! is_link($path)) {
                 $this->laravel->make('files')->deleteDirectory($path);
             }
 

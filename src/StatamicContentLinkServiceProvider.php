@@ -2,9 +2,9 @@
 
 namespace DoeAnderson\StatamicContentLink;
 
+use DoeAnderson\StatamicContentLink\Commands\StatamicContentLinkCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use DoeAnderson\StatamicContentLink\Commands\StatamicContentLinkCommand;
 
 class StatamicContentLinkServiceProvider extends PackageServiceProvider
 {
