@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace DoeAnderson\StatamicContentLink;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use DoeAnderson\StatamicContentLink\Commands\StatamicContentLinkCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class StatamicContentLinkServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,8 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->name('statamic-content-link')
+            ->hasConfigFile('statamic/content-link')
+            ->hasCommand(StatamicContentLinkCommand::class);
     }
 }
